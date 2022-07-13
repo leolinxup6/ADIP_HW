@@ -1,7 +1,7 @@
 # Advanced Digital Image Processing
 Compiler：Visual Studio 2019  
-Library：OpenCV
-Note：Unless otherwise specified, opencv cannot be used in any topic.
+Library：OpenCV  
+    Note：Unless otherwise specified, opencv cannot be used in any topic.
 ## Content
 * **HW1**
   * Raw image I/O
