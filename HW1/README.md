@@ -11,7 +11,7 @@
 >   1. Please determine the image size from the file information of the raw images.
 >   2. Use these four images to assemble a large image th have a good look.
 # Exercise 1.3 Brightness
-> *  Increase the image brightness. Reading `lena256.raw` and adding value **50** to each pixel value.
+> *  Increase the image brightness. Reading `lena256.raw` and adding value **50** to each pixel value. Write the output to a raw image file.
 > * Reading `lena256.raw` and increase the image brightness with random value within **-50** to **50**.
-# Exercise 2
-> * This probelm is to practice calling OpenCV functions.<br>You should open `haha.raw`. Please Draw your Student ID and any word you wantto show on the `haha.raw` image.
+# Exercise 2 PNG image I/O
+> * This probelm is to practice calling OpenCV functions.<br>You should open `haha.raw`. Please Draw your Student ID and any word you want to show on the `haha.raw` image. Save the image as png format.
