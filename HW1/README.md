@@ -1,4 +1,5 @@
 # Exercise 1.1 Raw image file format
+### Raw image file format
 > Try to use Xnview, a raw image viewer, to read the raw image `lena256.raw`.
 # Exercise 1.2 Raw image file I/O
 > * Read the raw image file `lena256.raw`.
