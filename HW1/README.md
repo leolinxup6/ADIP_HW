@@ -21,4 +21,4 @@
 
 # Exercise 2
 ### PNG image I/O
-> * This probelm is to practice calling OpenCV functions.<br>You should open `haha.raw`. Please Draw your Student ID and any word you want to show on the `haha.raw` image. Save the image as png format.
+> * This problem is to practice calling OpenCV functions.<br>You should open `haha.raw`. Please Draw your Student ID and any word you want to show on the `haha.raw` image. Save the image as png format.
