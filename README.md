@@ -27,6 +27,6 @@ Library：OpenCV  (Note：Unless otherwise specified, opencv cannot be used in a
   * Filter in frequency domain
 * **HW7**
   * Periodic noise
-  * Debluer
+  * Deblur
 * **HW8**
   * Morphology
