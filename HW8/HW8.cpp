@@ -268,9 +268,9 @@ void block(unsigned char* dst, unsigned char* src, int h, int w, int label) {
 int detect(unsigned char* src, unsigned char* dst, int h, int w) {
     int labelValue = 0;
     int seed, neighbor;
-    stack<int> intStack;    // 堆疊
+    stack<int> intStack;    
     int area = 0;
-    if (!intStack.empty()) intStack.pop();    // 清空Stack
+    if (!intStack.empty()) intStack.pop(); 
     memcpy(dst, src, sizeof(uchar) * h * w);
     Mat blurshrinklenaMat = Mat(w, h, CV_8UC1, dst);
     for (int i = 0; i < h; i++)
@@ -283,13 +283,13 @@ int detect(unsigned char* src, unsigned char* dst, int h, int w) {
                 labelValue++;
                 int k = i;
                 int l = j;
-                seed = i * w + j;     // Point（橫座標，縱座標）
+                seed = i * w + j;
                 dst[i * w + j] = labelValue;
                 intStack.push(i);
                 intStack.push(j);
                 while (!intStack.empty())
                 {
-                    neighbor = (i + 1) * w + j;//下
+                    neighbor = (i + 1) * w + j;
                     if ((((i + 1) < h) && j < w) && (dst[neighbor] == 255))
                     {
                         dst[neighbor] = labelValue;
@@ -297,7 +297,7 @@ int detect(unsigned char* src, unsigned char* dst, int h, int w) {
                         intStack.push(j);
                         area++;
                     }
-                    neighbor = (i - 1) * w + j;//上
+                    neighbor = (i - 1) * w + j;
                     if (((i != 0) && j < w) && (dst[neighbor] == 255))
                     {
                         dst[neighbor] = labelValue;
@@ -305,7 +305,7 @@ int detect(unsigned char* src, unsigned char* dst, int h, int w) {
                         intStack.push(j);
                         area++;
                     }
-                    neighbor = i * w + j + 1;//右
+                    neighbor = i * w + j + 1;
                     if (((i < h) && (j + 1 < w)) && (dst[neighbor] == 255))
                     {
                         dst[neighbor] = labelValue;
@@ -313,7 +313,7 @@ int detect(unsigned char* src, unsigned char* dst, int h, int w) {
                         intStack.push(j + 1);
                         area++;
                     }
-                    neighbor = i * w + j - 1;//左
+                    neighbor = i * w + j - 1;
                     if ((((i < h) && (j != 0)) && dst[neighbor] == 255))
                     {
                         dst[neighbor] = labelValue;
